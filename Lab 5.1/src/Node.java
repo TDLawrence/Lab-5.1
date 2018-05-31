@@ -8,16 +8,18 @@ public Node()
 }
 
 public ArrayList<Node> getChildren()
-{ArrayList<Node>childNodes=new ArrayList<Node>;
+{ArrayList<Node>childNodes=new ArrayList<Node>();
  int x=children.size();
  for (int y=0;y<x;y++)
   {if(this.children.get(y)!=null)
-   {childNodes.add(this.children.get(y));
-	  
-   }
-	 
+   {childNodes.add(this.children.get(y));  
+   }	 
   }
-	
+	return childNodes;
 }
-
+ 
+ public boolean removeChild (Node n)
+ {return false;
+	 
+ }
 }
