@@ -4,7 +4,7 @@ public class Node {
 ArrayList<Node>children;
 //Node class
 public Node()
-{this.children=children;	
+{this.children=children;
 }
 
 public ArrayList<Node> getChildren()
