@@ -19,9 +19,18 @@ ArrayList<Node>explored=new ArrayList<>();
 queue.add(this.startnode);
 explored.add(startnode);
       while(!queue.isEmpty() )
-      {
-    	  
+      {Node current=queue.remove();
+       if (current.equals(this.goalnode))
+        {System.out.println(explored);
+    	 return true;   
+        }
+       else {if (current.getChildren().isEmpty())
+               return false;
+       else 
+    	    queue.addAll(current.getChildren());
+            }
+       explored.add(current);
       }
-	
+	  return false;
 }
 }
