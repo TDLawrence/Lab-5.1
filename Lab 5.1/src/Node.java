@@ -17,6 +17,7 @@ public ArrayList<Node> getChildren()
   }
 	return childNodes;
 }
+
  
  public boolean removeChild (Node n)
  {return false;
